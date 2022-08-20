@@ -1,0 +1,16 @@
+/*
+Author: Aniket Kumar Giri
+*/
+
+/******************Is Prime*****************/
+bool isPrime(long long int n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (long long int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
